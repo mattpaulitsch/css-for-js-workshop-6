@@ -41,10 +41,14 @@ const Image = styled.img`
   height: 300px;
   object-fit: cover;
   border-radius: 2px;
+  margin-bottom: 8px;
 `;
 
 const Tags = styled.ul`
-  display: inline;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 4px 0;
 `;
 
 const Tag = styled.li`
@@ -53,16 +57,15 @@ const Tag = styled.li`
   font-size: 0.875rem;
   font-weight: 475;
   color: var(--color-gray-800);
-  display: inline-block;
-
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 300px;
-  margin-top: 8px;
+  display: inline;
+  border-radius: 2px;
 
   &:not(:last-child) {
     margin-right: 8px;
+  }
+
+  &:last-child {
+    max-width: 100%;
   }
 `;
 
