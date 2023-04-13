@@ -8,19 +8,21 @@ const Hero = () => {
                 <source
                     type="image/avif"
                     srcSet="
-                    /images/hero-img.avif 1x,
-                    /images/hero-img@2x.avif 2x,
-                    /images/hero-img@3x.avif 3x,
-                "
+                        /images/hero-img.avif 1x,
+                        /images/hero-img@2x.avif 2x,
+                        /images/hero-img@3x.avif 3x,
+                    "
                 />
                 <HeroImage src="/images/hero-img.jpg"
+                           alt="hero image with cute cat"
                            srcSet="
-                          /images/hero-img.jpg 1x,
-                          /images/hero-img@2x.jpg 2x,
-                          /images/hero-img@2x.jpg 3x,
-            " />
+                               /images/hero-img.jpg 1x,
+                               /images/hero-img@2x.jpg 2x,
+                               /images/hero-img@2x.jpg 3x,
+                           "
+                />
             </picture>
-            <Swoop src="/swoop.svg" />
+            <Swoop src="/swoop.svg" alt="" />
         </Wrapper>
     );
 };
